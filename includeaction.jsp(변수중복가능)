@@ -1,0 +1,36 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta http-equiv=Content-Type" content="text/html; charset=EUC-KR">
+    <title>JSP 예제 includeaction.jsp</title>
+</head>
+<body>
+
+<% int i = 12; %>
+<%int n = 365; %>
+1년은 <%=i %> 달 입니다.
+<jsp:include page="includesub.jsp"/>
+1년은 <%=n %> 일 입니다.
+
+</body>
+</html>
+
+----------------------------includesub.jsp------------------------------------
+
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <meta http-equiv=Content-Type" content="text/html; charset=EUC-KR">
+    <title>JSP예제 out.jsp</title>
+</head>
+<body>
+
+<% int n = 52; %>
+<hr><font color="blue">
+    1 년은 <%=n %> 주 입니다.
+
+</font><hr>
+
+
+</body>
+</html>
